@@ -124,8 +124,7 @@ a {
 }
 
 #history {
-    // background-image: url(http://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Square_Tiles_Texture.png);
-    // background-repeat: repeat;
+
     background-color: #F9F7F2;
     padding-bottom: 15%;
 
@@ -168,10 +167,36 @@ a {
 
 #motivation {
 
-}
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Square_Tiles_Texture.png);
+    background-repeat: repeat;
+    color: #FFF;
+    background-color: $light-blue;
 
-#my-story {
+    img {
+        display: block;
+        margin: auto auto;
+        padding-top: 3em;
+        width: 180px;
+        border-radius: 100%;
+    }
 
+    h2 {
+        font-family: 'PT Serif', serif;
+        color: #FFF;
+        text-align: center;
+        padding-top: 4em;
+        padding-bottom: 1.5em;
+    }
+
+    p {
+        margin: auto;
+        color: #FFF;
+        padding-top: 2em;
+    }
+
+    :last-child {
+        padding-bottom: 4em;
+    }
 }
 
 #skills {
