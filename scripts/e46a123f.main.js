@@ -1,0 +1,1 @@
+$(document).ready(function(a){a(".tip").tooltipster({theme:"tooltipster-shadow",delay:0})});
