@@ -180,6 +180,10 @@ div.cursor {
 
     a.tip {
         color: $electric-blue;
+
+        &:hover {
+            color: #364FEA;
+        }
     }
 
     .comment {
