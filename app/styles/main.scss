@@ -1,6 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import 'sass-bootstrap/lib/bootstrap';
 
 
@@ -17,6 +18,14 @@ $dark-gray: #444444;
 $orange: #F15D25;
 $blue-gray: #464C59;
 $electric-blue: #36B5EA;
+
+// "Code" colors
+
+$yellow: rgb(168, 190, 98) ;
+$purple: rgb(179, 147, 188);
+$blue: rgb(128, 162, 191);
+$mint: rgb(136, 190, 183);
+$comment: rgb(106, 106, 106);
 
 @mixin sexy-emboss($opacity:0.8, $opacity2:0.05) {
     box-shadow: 0 1px 0 rgba(255, 255, 255, $opacity),
@@ -36,12 +45,18 @@ $electric-blue: #36B5EA;
     padding: 0.2em 0;
 }
 
-body * {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: $dark-gray;
+body {
 
+    -webkit-font-smoothing: antialiased;
+
+    * {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        color: $dark-gray;
+
+    }
 }
+
 
 .wrapper {
     position: relative;
@@ -82,7 +97,6 @@ a {
     .container {
         max-width: 800px;
     }
-
 
     .header,
     .marketing,
@@ -138,44 +152,63 @@ a {
 
 #history {
 
-    background-color: #F9F7F2;
-    padding-bottom: 15%;
+    background-color: rgb(34, 34, 34);
+
+    a.tip {
+        color: $electric-blue;
+    }
+
+    .comment {
+        color: $comment;
+    }
 
     h2 {
-        font-family: 'PT Serif', serif;
-        margin-top: 4em;
-        margin-bottom: 2em;
-        font-weight: 700;
+        color: $comment;
+        margin-top: 6em;
     }
 
-    dl {
-        margin-top: 4em;
+    span {
+        font-family: 'Anonymous Pro', sans-serif;
     }
 
-    dt {
-        font-size: 1.125em;
-        color: #666;
-        width: 80px;
-        height: 80px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        background: #FFF;
-        border-radius: 100%;
-        border: 2px solid #DAD8CD;
-        float: left;
-        text-align: center;
-        padding-top: 25px;
-        position: relative;
-        z-index: 10;
-    }
+    .function-wrapper {
 
-    dd {
-        margin-left: 8em;
-    }
+        .yellow {
+            color: $yellow;
+        }
 
-    p {
-        margin-top: 3.25em;
+        .purple {
+            color: $purple;
+        }
+
+        .blue {
+            color: $blue;
+        }
+
+        .mint {
+            color: $mint;
+        }
+
+        * {
+            font-family: 'Anonymous Pro', sans-serif;
+            color: #FFF;
+        }
+
+        p {
+            color: #FFF;
+            padding-left: 2em;
+        }
+
+        .sub-p {
+            margin-left: 3em;
+        }
     }
+}
+
+.comment-p {
+
+    margin-top: 1.5em;
+    margin-bottom: 8em;
 }
 
 // ------ MOTIVATION SECTION ------
@@ -241,7 +274,6 @@ a {
 
 #skills {
 
-    // background-image: url(http://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Square_Tiles_Texture.png);
     background-color: $white;
     padding: 8em 0;
 
@@ -265,8 +297,8 @@ a {
     max-width: 50em;
     @include sexy-emboss();
 
-    .skill-category {
-
+    .skill-category * {
+        color: $dark-gray;
     }
 
     img {
@@ -288,26 +320,14 @@ a {
 
 #html-css {
     background-color: $electric-blue;
-
-    * {
-        color: $dark-gray;
-    }
 }
 
 #javascript {
     background-color: #FD795E;
-
-    * {
-        color: $dark-gray;
-    }
 }
 
 #collaboration {
     background-color: $success;
-
-    * {
-        color: $dark-gray;
-    }
 }
 
 // ------ CONTACT SECTION ------
@@ -326,6 +346,7 @@ a {
 
     img {
         width: 34px;
+        margin-right: .275em;
     }
 }
 
@@ -337,7 +358,7 @@ a {
 .soc-med-div {
     display: inline-block;
     padding-bottom: 8em;
-    margin-right: 3.48em;
+    margin-right: 3.2em;
 
     a {
         border-bottom: none;
@@ -348,19 +369,6 @@ a {
         color: #364FEA;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

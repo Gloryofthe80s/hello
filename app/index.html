@@ -18,6 +18,7 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/css/tooltipster.css" />
         <link rel="stylesheet" type="text/css" href="bower_components/tooltipster/css/themes/tooltipster-shadow.css" />
+        <link rel="stylesheet" href="styles/cursor.css" />
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -37,9 +38,9 @@
                     <div class="container">
                         <h1 class="text-center">Greetings, Code 42.</h1>
                         <img src="images/me.jpg" />
-                        <h3>I'm Jacob, and I'd love to work with you.</h3>
+                        <h3>My name is Jacob Wielgus.</h3>
                         <p>I'm a <a class="tip" title="We're not so different, you know...">Wisconsite</a> turned Minnesotan, living in Minneapolis with my wife. I'm also a frontend JavaScripter pursuing the lifelong craft of development and programming.</p>
-                        <p>Here's a bit about me and why I'd love to work at Code 42.</p>
+                        <p>Here's a bit about me and why I'd love to be part of the web development team at Code 42.</p>
                     </div>
                 </div>
             </div>
@@ -47,25 +48,39 @@
             <div id="history">
                 <div class="wrapper">
                     <div class="container">
-                        <h2>Where I've been...</h2>
-                        <div class="timeline-wrapper">
-                            <dl>
-                                <dt>2008</dt>
-                                <dd><b>(Apple)</b> { After <a class="tip" title="Journalism. Whoops.">graduating</a> college, I went full time at Apple, focusing primarily on training customers to use various software. In 2011, I went to California for 3 weeks to be trained as an Apple '<a class="tip" title="Please, no jokes. I've heard them all.">Genius.</a>' While I enjoyed hardware and software troubleshooting, I focused my free time on learning web languages and toying around with Corona SDK (an iOS/Android kit primarily focused on games). I decided that development would be my future. };</dd>
-                            </dl>
+                        <h2>whereIveBeen.js</h2>
 
-                            <dl>
-                                <dt>2013</dt>
-                                <dd><b>(Code 42)</b> { In early 2013, I left Apple to join Code 42 as a T1 Customer Champion. With a more regular schedule, I was able to really start focusing on web languages after-hours, and my passion grew stronger. It became clear that in order to accelerate and solidify my competencies, I would need to do more than relegate programming to my free time. After seriously considering the course of my professional and personal life, I made the difficult decision of resigning from a job that I loved to pursue something I loved even more. };</dd
-                            </dl>
+                        <div class="cursor"></div>
 
-                            <dl>
-                                <dt>Now</dt>
-                                <dd><b>(The Iron Yard Academy)</b> {  In January, I moved to South Carolina for <a class="tip" title="Really, I just wanted to skip Minnesota's worst winter in over 25 years.">three months</a> to attend a rigorous Front End Engineering class at <a href="http://theironyard.com/academy/front-end-engineering/" target="_blank">The Iron Yard</a>. I am currently two months in, and it has been immensely challenging and rewarding - two of the best months of my life - and I'm feverishly excited to put my skills to use. If you have any questions about my time/experiences there, I would love to talk more about it. };</dd
-                            </dl>
+                        <p> <span class="comment">// These describe my work history and a some detail about my background.</span> </p>
+                        <div class="function-wrapper">
+                            <h4><span class="purple">var</span> <span class="blue">in2008</span> <span class="mint">=</span> <span class="purple">function</span>() {</h4>
+                            <p>console.<span class="blue">log</span>(</p>
+                            <p class="sub-p"><span class="yellow">'After <a class="tip" title="Journalism degree. Whoops.">graduating</a> college, I went full time at Apple, focusing primarily on training customers to use various software. In 2011, I went to California for 3 weeks to be trained as an Apple '<a class="tip" title="Please, no jokes. I've heard them all.">Genius</a>.' While I enjoyed hardware and software troubleshooting, I focused my free time on learning web languages and toying around with Corona SDK (an iOS/Android kit primarily focused on games). I decided that development would be my future.'</span>);</p>
+                            <h4>};</h4>
                         </div>
 
-                        <p>I'll graduate from The Iron Yard Academy in mid-April, and leading up to then, I'll be building a web app that allows an admin to create and award 'achievements' to employees within a department. This was something we did in the Support department (via the wiki), and as a video game addict, the idea of achievements 'in real life' sounds like a fun app to build out.  </p>
+                        <div class="function-wrapper">
+                            <h4><span class="purple">var</span> <span class="blue">in2013</span> <span class="mint">=</span> <span class="purple">function</span>() {</h4>
+                            <p>console.<span class="blue">log</span>(</p>
+                            <p class="sub-p"><span class="yellow">'In early 2013, I left Apple to join Code 42 as a T1 Customer Champion. With a more regular schedule, I was able to really start focusing on web languages after-hours, and my passion grew stronger. It became clear that in order to accelerate and solidify my competencies, I would need to do more than relegate programming to my free time. After seriously considering the course of my professional and personal life, I made the difficult decision of resigning from a job that I loved to pursue something I loved even more.'</span>);</p>
+                            <h4>};</h4>
+                        </div>
+
+                        <div class="function-wrapper">
+                            <h4><span class="purple">var</span> <span class="blue">presentDay</span> <span class="mint">=</span> <span class="purple">function</span>() {</h4>
+                            <p>console.<span class="blue">log</span>(</p>
+                            <p class="sub-p"><span class="yellow">'In January, I moved to South Carolina for <a class="tip" title="Really, I just wanted to skip Minnesota's worst winter in over 25 years.">three months</a> to attend a rigorous Front End Engineering class at <a class="tip" title="Link: To The Iron Yard" href="http://theironyard.com/academy/front-end-engineering/" target="_blank">The Iron Yard</a>. I am currently two months in, and it has been immensely challenging and rewarding - two of the best months of my life - and I'm feverishly excited to put my skills to use. If you have any questions about my time/experiences there, I would love to talk more about it.'</span>);</p>
+                            <h4>};</h4>
+                        </div>
+
+
+                        <p class="comment-p"><span class="comment">// I'll graduate from The Iron Yard Academy in mid-April, and leading
+                        <br>// up to then, I'll be building a web app that allows an admin to
+                        <br>// create and award 'achievements' to employees within a department.
+                        <br>// This was something we did in the Support department (via the wiki),
+                        <br>// and as a video game addict, the idea of achievements 'in real life'
+                        <br>// sounds like a fun app to build out.</span>  </p>
                     </div>
                 </div>
             </div>
@@ -148,7 +163,7 @@
                     <div class="spacer"></div>
 
                     <div class="container">
-                        <h2>We should talk.</h2>
+                        <h2>I would love to talk!</h2>
                         <p>I'm excited about this opportunity, and hope we can connect soon.</p>
 
                         <div class="soc-med-div">
