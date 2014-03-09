@@ -1,8 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif);
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+// @import url(http://fonts.googleapis.com/css?family=PT+Serif);
+// @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 @import 'sass-bootstrap/lib/bootstrap';
 
@@ -95,14 +95,14 @@ a {
 }
 
 div.cursor {
+    height: 1.5em;
+    display: inline-block;
+    border-left:.2em solid rgb(34, 34, 34);
+    background: #FFF;
+    margin-left: 1px;
 
-  display: inline-block;
-  border-left:.2em solid rgb(34, 34, 34);
-  background: #FFF;
-  margin-left: 1px;
-
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
 }
 
 @-webkit-keyframes blink {
