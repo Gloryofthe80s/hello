@@ -245,6 +245,10 @@ div.cursor {
         margin-left:-2.5em;
     }
 
+    .reason {
+
+    }
+
     h2 {
         font-family: 'PT Serif', serif;
         color: #FFF;
@@ -261,26 +265,27 @@ div.cursor {
         @include sexy-font-shadow();
     }
 
+    .tip {
+        padding-bottom: 0;
+    }
+
+    .circle {
+        line-height: 10em;
+        border-radius: 100%;
+        width: 10em;
+        height: 10em;
+        position: relative;
+        margin: auto auto;
+        padding-top: 3em;
+        border: .5em solid $orange;
+    }
+
     :last-child {
         padding-bottom: 4em;
     }
 
-    .tip {
-        padding-bottom: 0;
-    }
 }
 
-.circle {
-    line-height: 10em;
-    border-radius: 100%;
-    width: 10em;
-    height: 10em;
-    position: relative;
-    margin: auto auto;
-    padding-top: 3em;
-    text-align: center;
-    border: .5em solid $orange;
-}
 
 // ------ SKILLS SECTION ------
 
