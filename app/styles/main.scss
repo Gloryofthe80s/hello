@@ -44,14 +44,17 @@ $comment: rgb(106, 106, 106);
 }
 
 body {
-
     -webkit-font-smoothing: antialiased;
+
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 
     * {
         font-family: 'Open Sans', sans-serif;
         line-height: 1.6;
         color: $dark-gray;
-
+        overflow-x: hidden;
     }
 }
 
@@ -111,7 +114,7 @@ div.cursor {
     50% { border-color: rgb(34, 34, 34) }
 }
 
-// ------ GREETINGS SECTIONG ------
+// ------ GREETINGS SECTION ------
 
 #greetings {
 
@@ -124,18 +127,25 @@ div.cursor {
         }
 
         img {
-            width: 250px;
-            margin-right: 30px;
-            float: left;
+            width: 16em;
             border-radius: 100%;
-            margin-bottom: 6em;
         }
 
         h3 {
             font-family: 'PT Serif', serif;
             font-weight: 700;
-            margin-top: 4em;
             margin-bottom: .5em;
+            margin-top: 0;
+        }
+
+        .text-box {
+        }
+
+        .img-box {
+            float: left;
+            display: inline-block;
+            margin-bottom: 6em;
+            margin-right: 4em;
         }
 }
 
@@ -278,11 +288,11 @@ div.cursor {
     padding: 8em 0;
 
     h1  {
+        font-family: 'PT Serif', serif;
         color: $dark-gray;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 2em;
-        font-weight: 700;
     }
 
 }
@@ -296,6 +306,10 @@ div.cursor {
     padding: 2em;
     max-width: 50em;
     @include sexy-emboss();
+
+    h1 {
+        font-family: 'PT Serif', serif;
+    }
 
     .skill-category * {
         color: $dark-gray;
@@ -315,6 +329,21 @@ div.cursor {
     ul {
         margin-left: 4em;
         list-style-type: circle;
+        list-style-position: inside;
+    }
+
+    li {
+        display: list-item;
+        margin-bottom: 1em;
+        padding-left: .25em;
+    }
+    a {
+        color: #D770E8;
+        border-color: $purple;
+
+        &:hover {
+            color: pink;
+        }
     }
 }
 
@@ -374,19 +403,106 @@ div.cursor {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-/* Styles */
-}
 
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
+    .container {
+        min-width: 320px;
+    }
 
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
+    #greetings {
+
+        .img-box {
+            display: block;
+            margin-left: 2.2em;
+            margin-bottom: 3em;
+            margin-right: 1em;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h3 {
+            overflow-x: initial;
+
+        }
+
+        p {
+            overflow-x: initial;
+        }
+
+        .text-box {
+            overflow-x: initial;
+            display: block;
+        }
+    }
+
+    #history {
+
+        h2 {
+            margin-top: 2em;
+        }
+
+        .function-wrapper {
+
+            p {
+                margin-left: 1em;
+                padding-left: 0;
+            }
+
+            .sub-p {
+                margin-left: 1.5em;
+            }
+        }
+    }
+
+    #motivation {
+
+        .circle {
+            width: 6em;
+            height: 6em;
+            border-width: .25em;
+        }
+
+        img {
+            width: 2.5em;
+            margin-top: -1.25em;
+            margin-left: -1.25em;
+
+        }
+    }
+
+    #skills {
+
+        .skill-div {
+
+            padding: 1em;
+
+            ul {
+                margin: 0;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    #contact {
+
+        h2 {
+            padding-top: 1.5em;
+        }
+
+        .spacer {
+            padding: 4em 0;
+        }
+
+        .soc-med-div {
+            display: block;
+            padding-bottom: 2em;
+        }
+
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -404,34 +520,9 @@ and (orientation : landscape) {
 /* Styles */
 }
 
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
+@media screen
+and (min-width : 768px) {
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-
-@media screen and (min-width: 768px) {
     .container {
         max-width: 800px;
     }
