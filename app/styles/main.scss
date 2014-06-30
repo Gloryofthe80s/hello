@@ -309,10 +309,6 @@ div.cursor {
     max-width: 50em;
     @include sexy-emboss();
 
-    h1 {
-        font-family: 'PT Serif', serif;
-    }
-
     .skill-category * {
         color: $dark-gray;
     }
@@ -323,7 +319,6 @@ div.cursor {
     }
 
     h3 {
-        font-family: 'PT Serif', serif;
         display: inline-block;
         margin: 0 1em;
     }
